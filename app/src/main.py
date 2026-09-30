@@ -27,7 +27,7 @@ logging.basicConfig(
 log = logging.getLogger("voltra")
 
 CREDS_PATH = Path(os.environ.get("CREDS_PATH", "/vault/secrets/db-creds"))
-DB_HOST = os.environ.get("DB_HOST", "postgres-postgresql.db.svc.cluster.local")
+DB_HOST = os.environ.get("DB_HOST", "postgres-postgresql.pg-database.svc.cluster.local")
 DB_PORT = os.environ.get("DB_PORT", "5432")
 DB_NAME = os.environ.get("DB_NAME", "appdb")
 POLL_SECONDS = float(os.environ.get("CREDS_POLL_SECONDS", "2"))
